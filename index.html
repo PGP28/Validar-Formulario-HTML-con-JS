@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+
+
+</head>
+
+<body>
+
+
+    <form id="myform" sm-6 col-12>
+        <div class="card">
+            <h1 class="card-header">Payment form example</h1>
+
+            <div class="card-body">
+                <div class="alert alert-danger d-none" role="alert">
+                    Some fields are missing
+                </div>
+
+
+
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <label for="card">Card#</label>
+                        <input type="text" class="form-control" id="card" placeholder="XXXXXXXXXXXXXXXX"
+                            pattern="[0-9]{16}">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="CVC#">CVC#</label>
+                        <input type="text" class="form-control" id="CVC" placeholder="0000" pattern="[0-9]{4}">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="Amount">Amount</label>
+                        <input type="text" class="form-control" id="Amount" placeholder="Amount">
+                    </div>
+                </div>
+
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputAddress">First Name</label>
+                        <input type="text" class="form-control" id="inputAddress"
+                            pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputAddress2">Last Name</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                            pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$">
+                    </div>
+                </div>
+
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputState">State</label>
+                        <select value="" id="inputState" class="form-control">
+                            <option selected>Pick a state</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="chile">Chile</option>
+                            <option value="peru">Peru</option>
+                            <option value="venezuela">Venezuela</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputZip">Postal Code</label>
+                        <input type="text" class="form-control" id="inputZip" pattern="[0-9]{4}">
+                    </div>
+
+
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6 ">
+                        <label for="tarjetas">We accept:</label>
+                        <div class="form-radio col-md-6 bg-secondary">
+                            <input type="radio" name="metodo de pago" id="tarjetas" value="mastercard" checked><i
+                                class="fab fa-cc-mastercard"></i>
+                            <input type="radio" name="metodo de pago" id="tarjetas" value="visa" checked><i
+                                class="fab fa-cc-visa"></i>
+                            <input type="radio" name="metodo de pago" id="tarjetas" value="credito" checked><i
+                                class="fab fa-cc-diners-club"></i>
+                            <input type="radio" name="metodo de pago" id="tarjetas" value="debito" checked><i
+                                class="far fa-credit-card"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group col-md-6 ">
+
+                        <label for="inputZip">Message</label>
+                        <textarea class="form-control" name="" id="" rows="3">Mensaje opcional.
+                                </textarea>
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+                <div class="card-body">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="submit" id="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </form>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>
